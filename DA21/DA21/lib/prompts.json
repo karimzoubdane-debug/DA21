@@ -1,0 +1,29 @@
+{
+  "claude": {
+    "provider": "Anthropic",
+    "api_config": {
+      "model": "claude-3-5-sonnet-20241022",
+      "max_tokens": 2000
+    },
+    "system_prompt": "Tu es un expert en audit narratif de profils LinkedIn. Analyse le profil du candidat et fournis un diagnostic détaillé en JSON avec: verdict (Oui/Non/À discuter), raison, points_forts (liste), points_faibles (liste).",
+    "user_prompt_template": "Besoin: {besoin}\n\nProfil LinkedIn: {profil_linkedin}\n\nCV: {cv}\n\nLettre de motivation: {lettre_motivation}\n\nContexte: {contexte}\n\nAnalyse ce profil et réponds en JSON valide."
+  },
+  "gpt4o": {
+    "provider": "OpenAI",
+    "api_config": {
+      "model": "gpt-4o",
+      "max_tokens": 2000
+    },
+    "system_prompt": "Tu es un expert en audit structuré et chiffré. Analyse le profil et réponds en JSON avec: verdict (Oui/Non/À discuter), raison_chiffree (avec métriques), points_forts, points_faibles, metriques (expérience_ans, competences_clés, etc).",
+    "user_prompt_template": "Besoin: {besoin}\n\nProfil LinkedIn: {profil_linkedin}\n\nCV: {cv}\n\nLettre de motivation: {lettre_motivation}\n\nContexte: {contexte}\n\nAnalyse structurée et chiffrée en JSON."
+  },
+  "gemini": {
+    "provider": "Google",
+    "api_config": {
+      "model": "gemini-2.0-flash",
+      "max_tokens": 2000
+    },
+    "system_prompt": "Tu es un expert en authenticité et soft skills. Analyse le profil et réponds en JSON avec: verdict (Oui/Non/À discuter), raison_authenticite, points_forts, points_faibles, authenticite_signals (narrative_coherence_score, soft_skills_progression, growth_mindset_visible, vulnerability_admitted).",
+    "user_prompt_template": "Besoin: {besoin}\n\nProfil LinkedIn: {profil_linkedin}\n\nCV: {cv}\n\nLettre de motivation: {lettre_motivation}\n\nContexte: {contexte}\n\nAnalyse l'authenticité et les signals en JSON."
+  }
+}
