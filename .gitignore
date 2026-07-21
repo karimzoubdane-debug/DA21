@@ -1,0 +1,5 @@
+# Claude Mastery skills ÔÇö artefacts installes (recuperes via le lock, non versionnes)
+.agents/
+.claude/skills/
+.claude/logs/
+# NB : skills-lock.json est VOLONTAIREMENT versionne (manifeste d'integrite) ÔÇö ne pas l'ignorer.
